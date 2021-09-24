@@ -1,0 +1,52 @@
+<!-- includes the user profile photo , username , and title of the page -->
+<div class="navbar-brand level-left">
+
+  <a class="level-item logo-margin" href="#">
+    <img src="https://media-exp1.licdn.com/dms/image/C560BAQGwANrY-0niDg/company-logo_200_200/0/1572673264856?e=2159024400&v=beta&t=rPG9XKtmMQke2Lo8knnCRY_fZJ9qO7gVp_vUlIZAVqw" width="80" height="80">
+  </a>
+
+  <div id="navbarBasicExample" class="navbar-menu level-item logo-margin">
+
+    <div class="navbar-start" style="margin-top: 6px;" *ngIf="UserRole" >
+      <div style="padding: 4px;margin-right: -10px;">
+        <figure class="image is-48x48">
+          <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+        </figure>
+      </div>
+      <a class="navbar-item subtitle" style="color: azure;">
+        Pharmacist
+      </a>
+    </div>
+
+    <div class="navbar-start" style="margin-top: 6px;" *ngIf="CashierRole" >
+      <div style="padding: 4px;margin-right: -10px;">
+        <figure class="image is-48x48">
+          <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+        </figure>
+      </div>
+      <a class="navbar-item subtitle" style="color: azure;">
+        Cashier
+      </a>
+    </div>
+
+
+    <div class="navbar-start" style="margin-top: 6px;" *ngIf="ApharmacistRole" >
+      <div style="padding: 4px;margin-right: -10px;">
+        <figure class="image is-48x48">
+          <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+        </figure>
+      </div>
+      <a class="navbar-item subtitle" style="color: azure;">
+        Assistant Pharmacist
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<style>
+  .logo-margin{
+    margin-left: 13%;
+  }
+</style>
